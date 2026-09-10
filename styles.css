@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --black: #0B0B0A;
+    --gold: #C9A24B;
+    --cream: #F5F1E6;
+}
+
+body{
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'Jost', sans-serif;
+}
+
+h1, h2. h3{
+    font-family: 'Comorant Garamond', serif;
+    font-weight: 500;
+}
