@@ -70,5 +70,7 @@ a{
 }
 
 .media-block{
-    fle
+    flex: 1 1 45%;
+    height: 200px;
+    background: linear-gradient(150deg, #3a2f1a, #171310);
 }
