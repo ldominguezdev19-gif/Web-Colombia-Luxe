@@ -89,3 +89,20 @@ a{
     background: linear-gradient(150deg, #3a2f1a, #171310);
     border: 1px solid rgba(201, 162, 75, 0.3);
 }
+
+.slider-arrow{
+    background: var(--black);
+    color: var(--cream);
+    border: 1px solid var(--gold);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.25 ease;
+}
+
+.slider-arrow:hover{
+    background: var(--gold);
+    color: var(--black);
+}
