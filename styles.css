@@ -88,6 +88,7 @@ a{
     height: 100%;
     background: linear-gradient(150deg, #3a2f1a, #171310);
     border: 1px solid rgba(201, 162, 75, 0.3);
+    object-fit: cover;
 }
 
 .slider-arrow{
