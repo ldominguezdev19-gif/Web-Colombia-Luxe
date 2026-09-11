@@ -24,6 +24,8 @@ h1, h2, h3{
 nav{
     justify-content: space-between;
     display: flex;
+    align-items: center;
+    padding: 24px 48px;
 }
 
 nav ul{
@@ -35,4 +37,11 @@ nav ul{
 a{
     color: inherit;
     text-decoration: none;
+}
+
+.btn-gold{
+    background: var(--gold);
+    color: var(--black);
+    padding: 12px 24px;
+    border-radius: 4px;
 }
