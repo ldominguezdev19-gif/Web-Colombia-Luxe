@@ -18,7 +18,7 @@ nextBtn.addEventListener('click', function(){
 
 prevBtn.addEventListener('click', function(){
     currentSlide = currentSlide - 1;
-    if (currentSlide > 0){
+    if (currentSlide < 0){
         currentSlide = 2;
     }
     updateSlide();
