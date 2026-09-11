@@ -44,4 +44,10 @@ a{
     color: var(--black);
     padding: 12px 24px;
     border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+.btn-gold:hover{
+    color: var(--cream);
+    box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
 }
