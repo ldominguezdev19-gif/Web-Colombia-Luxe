@@ -60,3 +60,15 @@ a{
     position: relative;
     overflow: hidden;
 }
+
+.hero-content{
+    flex: 1;
+}
+
+.hero-media{
+    flex: 1;
+}
+
+.media-block{
+    fle
+}
