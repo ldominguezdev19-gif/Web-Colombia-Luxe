@@ -51,3 +51,12 @@ a{
     color: var(--cream);
     box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
 }
+
+.hero{
+    display: flex;
+    gap: 48px;
+    padding: 96px 48px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
