@@ -108,6 +108,18 @@ a {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.25 ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.prev {
+    left: 16px;
+}
+
+.next {
+    right: 16px;
 }
 
 .slider-arrow:hover {
