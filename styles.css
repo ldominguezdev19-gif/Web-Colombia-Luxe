@@ -154,4 +154,23 @@ a{
     color: var(--black);
 }
 
+.ticker{
+    border-top: 1px solid rgba(201, 162, 75, 0.3);
+    border-bottom: 1px solid rgba(201, 162, 75, 0.3);
+    padding: 20px 48px;
+    overflow: hidden;
+}
 
+.ticker-track{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.ticker-track li{
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
