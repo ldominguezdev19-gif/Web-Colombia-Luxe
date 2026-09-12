@@ -134,3 +134,24 @@ a{
     color: rgba(245, 241, 230, 0.5);
     margin-top: 32px;
 }
+
+.hero-cta{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.btn-outline{
+    border: 1px solid var(--gold);
+    color: var(--cream);
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+.btn-outline:hover{
+    background: var(--gold);
+    color: var(--black);
+}
+
+
