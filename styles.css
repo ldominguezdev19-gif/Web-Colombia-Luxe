@@ -174,3 +174,15 @@ a{
     text-transform: uppercase;
     white-space: nowrap;
 }
+
+nav > div {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+nav > div span{
+    display: block;
+    color: var(--gold);
+}
