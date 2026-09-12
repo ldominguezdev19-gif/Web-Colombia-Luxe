@@ -1,27 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --black: #0B0B0A;
     --gold: #C9A24B;
     --cream: #F5F1E6;
 }
 
-body{
+body {
     background: var(--black);
     color: var(--cream);
     font-family: 'Jost', sans-serif;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
 
-nav{
+nav {
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -29,31 +31,35 @@ nav{
     border-bottom: 1px solid rgba(201, 162, 75, 0.2);
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 32px;
     list-style: none;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-.btn-gold{
-    background: var(--gold);
+.btn-gold {
+    background: linear-gradient(135deg, #E8C77A, #C9A24B 50%, #A9812F);
     color: var(--black);
-    padding: 12px 24px;
+    padding: 14px 28px;
     border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     transition: all 0.25s ease;
 }
 
-.btn-gold:hover{
+.btn-gold:hover {
     color: var(--cream);
     box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
 }
 
-.hero{
+.hero {
     display: flex;
     gap: 48px;
     padding: 96px 48px;
@@ -62,29 +68,29 @@ a{
     overflow: hidden;
 }
 
-.hero-content{
+.hero-content {
     flex: 1;
 }
 
-.hero-media{
+.hero-media {
     flex: 1;
     position: relative;
 }
 
-.slider-viewport{
+.slider-viewport {
     width: 100%;
     height: 320px;
     overflow: hidden;
     border-radius: 4px;
 }
 
-.slider-track{
+.slider-track {
     display: flex;
     height: 100%;
     transition: transform 0.4s ease;
 }
 
-.media-block{
+.media-block {
     flex: 0 0 100%;
     height: 100%;
     background: linear-gradient(150deg, #3a2f1a, #171310);
@@ -92,7 +98,7 @@ a{
     object-fit: cover;
 }
 
-.slider-arrow{
+.slider-arrow {
     background: var(--black);
     color: var(--cream);
     border: 1px solid var(--gold);
@@ -104,12 +110,12 @@ a{
     transition: all 0.25 ease;
 }
 
-.slider-arrow:hover{
+.slider-arrow:hover {
     background: var(--gold);
     color: var(--black);
 }
 
-.hero-eyebrow{
+.hero-eyebrow {
     color: var(--gold);
     font-size: 13px;
     letter-spacing: 3px;
@@ -117,32 +123,32 @@ a{
     margin-bottom: 20px;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 56px;
     line-height: 1.1;
     margin-bottom: 24px;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     font-size: 17px;
     color: rgba(245, 241, 230, 0.7);
     max-width: 480px;
     margin-bottom: 32px;
 }
 
-.hero-register{
+.hero-register {
     font-size: 12px;
     color: rgba(245, 241, 230, 0.5);
     margin-top: 32px;
 }
 
-.hero-cta{
+.hero-cta {
     display: flex;
     gap: 16px;
     margin-bottom: 32px;
 }
 
-.btn-outline{
+.btn-outline {
     border: 1px solid var(--gold);
     color: var(--cream);
     padding: 12px 24px;
@@ -150,25 +156,25 @@ a{
     transition: all 0.25s ease;
 }
 
-.btn-outline:hover{
+.btn-outline:hover {
     background: var(--gold);
     color: var(--black);
 }
 
-.ticker{
+.ticker {
     border-top: 1px solid rgba(201, 162, 75, 0.3);
     border-bottom: 1px solid rgba(201, 162, 75, 0.3);
     padding: 20px 48px;
     overflow: hidden;
 }
 
-.ticker-track{
+.ticker-track {
     display: flex;
     gap: 40px;
     list-style: none;
 }
 
-.ticker-track li{
+.ticker-track li {
     color: var(--gold);
     font-size: 13px;
     letter-spacing: 2px;
@@ -176,14 +182,14 @@ a{
     white-space: nowrap;
 }
 
-nav > div {
+nav>div {
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
 }
 
-nav > div span{
+nav>div span {
     display: block;
     color: var(--gold);
 }
