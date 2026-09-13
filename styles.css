@@ -246,7 +246,6 @@ nav>div span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1px;
-    background: rgba(245, 241, 230, 0.12);
     border: 1px solid rgba(245, 241, 230, 0.12);
 }
 
