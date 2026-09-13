@@ -245,3 +245,18 @@ nav>div span {
     background: rgba(245, 241, 230, 0.12);
     border: 1px solid rgba(245, 241, 230, 0.12);
 }
+
+.divsion-card {
+    padding: 48px 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divsion-number {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
