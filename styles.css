@@ -190,6 +190,8 @@ a {
     display: flex;
     gap: 40px;
     list-style: none;
+    width: max-content;
+    animation: scroll-ticker 25s linear infinite;
 }
 
 .ticker-track li {
@@ -198,6 +200,16 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+@keyframes scroll-ticker {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 nav>div {
