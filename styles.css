@@ -207,3 +207,33 @@ nav>div span {
     display: block;
     color: var(--gold);
 }
+
+#servicios {
+    padding: 120px 48px;
+}
+
+.servicios-intro {
+    max-width: 600px;
+    margin-bottom: 64px;
+}
+
+.servicios-intro-eyebrow {
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.servicios-intro-title {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.servicios-intro-subtitle {
+    font-size: 17px;
+    color: rgba(245, 241, 230, 0.7);
+    max-width: 480px;
+    margin-bottom: 32px;
+}
