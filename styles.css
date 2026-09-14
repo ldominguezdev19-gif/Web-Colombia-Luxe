@@ -334,6 +334,10 @@ nav>div span {
     color: var(--gold);
 }
 
+.destinations-section{
+    padding: 96px 48px;
+}
+
 .destino-intro{
     max-width: 600px;
     margin-bottom: 48px;
