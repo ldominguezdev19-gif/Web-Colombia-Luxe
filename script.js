@@ -1,3 +1,4 @@
+/*
 const track = document.querySelector('.slider-track')
 const prevBtn = document.querySelector('.prev')
 const nextBtn = document.querySelector('.next')
@@ -23,3 +24,4 @@ prevBtn.addEventListener('click', function(){
     }
     updateSlide();
 });
+*/
