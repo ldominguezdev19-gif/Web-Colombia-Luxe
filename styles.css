@@ -334,6 +334,11 @@ nav>div span {
     color: var(--gold);
 }
 
+.destino-intro{
+    max-width: 600px;
+    margin-bottom: 48px;
+}
+
 .destinos-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
