@@ -70,10 +70,12 @@ a {
     align-items: center;
     justify-content: center;
     background-image: url(assets/imagenes/copas.jpeg);
-    background-size: cover;
+    background-size: contain;
     background-position: center 60%;
+    background-repeat: no-repeat;
     overflow: hidden;
     text-align: center; 
+    min-height: 2000px;  
 }
 
 .hero-overlay{
