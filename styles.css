@@ -333,3 +333,25 @@ nav>div span {
     margin-left: 8px;
     color: var(--gold);
 }
+
+.destinos-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-top: 46px;
+}
+
+.destino-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    grid-column: span 3;
+    height: 320px;
+}
+
+.destino-card:ntn-child(3),
+.destino-card:ntn-child(4),
+.destino-card:ntn-child(5) {
+    grid-column: span 2;
+    height: 260px;
+}
