@@ -372,6 +372,11 @@ nav>div span {
     border-radius: 4px;
     grid-column: span 3;
     height: 320px;
+    transition: box-shadow 0.3 ease;
+}
+
+.destino-card:hover{
+    box-shadow: 0 0 30px rgba(201, 162, 75, 0.35);
 }
 
 .destino-card:nth-child(3),
