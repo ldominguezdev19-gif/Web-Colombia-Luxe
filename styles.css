@@ -349,9 +349,9 @@ nav>div span {
     height: 320px;
 }
 
-.destino-card:ntn-child(3),
-.destino-card:ntn-child(4),
-.destino-card:ntn-child(5) {
+.destino-card:nth-child(3),
+.destino-card:nth-child(4),
+.destino-card:nth-child(5) {
     grid-column: span 2;
     height: 260px;
 }
@@ -371,5 +371,15 @@ nav>div span {
     left: 0;
     width: 100%;
     padding: 24px;
-    background: linear-gradient(to top, rgb(11,11,10,0.9), transparent);
+    background: linear-gradient(to top, rgba(11,11,10,0.9), transparent);
+}
+
+.destino-overlay h3{
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.destino-desc{
+    font-size: 13px;
+    color: rgba(245, 241, 230, 0.8);
 }
