@@ -417,9 +417,21 @@ nav>div span {
 .destino-overlay h3{
     font-size: 22px;
     margin-bottom: 6px;
+    transition: all 0.3s ease;
 }
 
 .destino-desc{
     font-size: 13px;
     color: rgba(245, 241, 230, 0.8);
+    transition: all 0.3s ease;
+}
+
+.destino-card:hover{
+    color: var(--gold);
+    transform: translateY(-4px);
+}
+
+.destino-card:hover .destino-desc{
+    color: rgba(201, 162, 75, 0.75);
+    transform: translateY(-4px);
 }
