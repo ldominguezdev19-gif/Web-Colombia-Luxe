@@ -375,8 +375,9 @@ nav>div span {
     overflow: hidden;
     border-radius: 4px;
     grid-column: span 3;
-    height: 320px;
+    height: 480px;
     transition: box-shadow 0.3 ease;
+    border: 1px solid #3a2f1a
 }
 
 .destino-card:hover{
@@ -387,7 +388,7 @@ nav>div span {
 .destino-card:nth-child(4),
 .destino-card:nth-child(5) {
     grid-column: span 2;
-    height: 260px;
+    height: 480px;
 }
 
 .destino-img{
