@@ -337,6 +337,7 @@ nav>div span {
 .destino-intro{
     max-width: 600px;
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .destino-intro-eyebrow{
@@ -346,6 +347,16 @@ nav>div span {
     text-transform: uppercase;
     margin-bottom: 16px;
     display: block;
+}
+
+.destino-intro-title{
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.destino-intro-subtitle{
+    color: rgba(245, 241, 230, 0.7);
+    font-size: 16px;
 }
 
 .destinos-grid{
@@ -377,6 +388,11 @@ nav>div span {
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.5s ease;
+}
+
+.destino-card:hover .destino-img{
+    transform: scale(1.08);
 }
 
 .destino-overlay{
