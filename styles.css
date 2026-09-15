@@ -506,3 +506,15 @@ nav>div span {
     color: rgba(245, 241, 230, 0.65);
     max-width: 520px;
 }
+
+.nosotros-text p.body + p.body{
+    margin-top: 18px;
+}
+
+.nosotros-signature{
+    margin-top: 36px;
+    font-family: 'Nunito', serif;
+    font-style: italic;
+    font-size: 26px;
+    color: var(--gold);
+}
