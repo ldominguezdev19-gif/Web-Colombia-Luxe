@@ -166,10 +166,6 @@ a {
     margin-bottom: 32px;
 }
 
-
-
-
-
 .ticker {
     border-top: 1px solid rgba(201, 162, 75, 0.3);
     border-bottom: 1px solid rgba(201, 162, 75, 0.3);
@@ -216,12 +212,12 @@ nav>div span {
 }
 
 #servicios {
-    padding: 120px 48px;
+    padding: 96px 48px 0;
 }
 
 .servicios-intro {
     max-width: 600px;
-    margin: 0 auto 64px;
+    margin: 0 auto 120px;
     text-align: center;
 }
 
@@ -326,12 +322,12 @@ nav>div span {
 }
 
 .destinations-section{
-    padding: 96px 48px;
+    padding: 96px 48px 0;
 }
 
 .destino-intro{
     max-width: 600px;
-    margin: 0 auto 48px;
+    margin: 0 auto 96px;
     text-align: center;
 }
 
