@@ -194,7 +194,8 @@ nav>div span {
 
 .servicios-intro {
     max-width: 600px;
-    margin-bottom: 64px;
+    margin: 0 auto 64px;
+    text-align: center;
 }
 
 .servicios-intro-eyebrow {
@@ -214,7 +215,6 @@ nav>div span {
 .servicios-intro-subtitle {
     font-size: 17px;
     color: rgba(245, 241, 230, 0.7);
-    max-width: 480px;
     margin-bottom: 32px;
 }
 
@@ -304,7 +304,7 @@ nav>div span {
 
 .destino-intro{
     max-width: 600px;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
     text-align: center;
 }
 
