@@ -260,6 +260,7 @@ nav>div span {
     flex-direction: column;
     transition: background 0.25s ease;
     cursor: pointer;
+    min-width: 0;
 }
 
 .division-card:hover {
