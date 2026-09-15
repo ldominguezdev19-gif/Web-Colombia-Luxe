@@ -518,3 +518,14 @@ nav>div span {
     font-size: 26px;
     color: var(--gold);
 }
+
+.nosotros-signature span{
+    display: block;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(245, 241, 230, 0.65);
+    margin-top: 6px;
+}
