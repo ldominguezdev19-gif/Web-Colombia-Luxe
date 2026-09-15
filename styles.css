@@ -72,7 +72,6 @@ a {
     background-image: url(assets/imagenes/copas-169.jpg);
     background-size: cover;
     background-position: center 60%;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -147,12 +146,15 @@ a {
     color: var(--black);
 }
 
-.hero-eyebrow {
+.hero-badge {
     color: var(--gold);
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    padding: 4px;
 }
 
 .hero h1 {
