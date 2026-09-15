@@ -475,3 +475,12 @@ nav>div span {
     border: 1px solid rgba(201, 162, 75, 0.25);
     pointer-events: none;
 }
+
+.nosotros-eyebrow{
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 18px;
+}
