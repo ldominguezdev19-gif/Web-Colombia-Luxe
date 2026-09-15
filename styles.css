@@ -489,3 +489,13 @@ nav>div span {
     font-size: 42px;
     margin-bottom: 6px;
 }
+
+.nosotros-role{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(245, 241, 230, 0.65);
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(245, 241, 230, 0.15);
+}
