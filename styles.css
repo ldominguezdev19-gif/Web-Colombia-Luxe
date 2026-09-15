@@ -445,3 +445,33 @@ nav>div span {
     background: rgba(11,11,10,0.4);
     z-index: 1;
 }
+
+#nosotros{
+    padding: 96px 48px 0;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 72px;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.nosotros-photo{
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: 4px;
+    background: linear-gradient(150deg, #3a2f1a, #171310);
+    border: 1px solid rgba(201, 162, 75, 0.5);
+    overflow: hidden;
+}
+
+.nosotros-photo::after{
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(201, 162, 75, 0.25);
+    pointer-events: none;
+}
