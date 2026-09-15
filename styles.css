@@ -298,6 +298,31 @@ nav>div span {
     display: block;
 }
 
+.division-slider-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(11, 11, 10, 0.55);
+    border: 1px solid rgba(245, 241, 230, 0.5);
+    color: var(--cream);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.division-slider-arrow.prev{
+    left: 8px;
+}
+
+.division-slider-arrow.next{
+    left: 8px;
+}
+
 .division-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
