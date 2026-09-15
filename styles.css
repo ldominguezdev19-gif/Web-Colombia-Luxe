@@ -46,6 +46,22 @@ a {
     text-decoration: none;
 }
 
+.btn-gold-nav {
+    background: linear-gradient(135deg, #E8C77A, #C9A24B 50%, #A9812F);
+    color: var(--cream);
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+
+.btn-gold-nav:hover{
+    box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
+}
+
 .hero-cta a{
     text-align: center;
     min-width: 220px;
