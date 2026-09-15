@@ -27,12 +27,13 @@ nav {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: #0B0B0A;
+    background: transparent;
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 24px 48px;
     border-bottom: 1px solid rgba(201, 162, 75, 0.2);
+    transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 nav ul {
