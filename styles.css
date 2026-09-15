@@ -396,17 +396,13 @@ nav>div span {
     max-width: 90%;
 }
 
-.destino-card:hover{
+.destino-card:hover h3{
     color: var(--gold);
     transform: translateY(-4px);
 }
 
-.destino-card:hover {
+.destino-card:hover .destino-desc{
     color: rgba(201, 162, 75, 0.75);
-    transform: translateY(-4px);
-}
-
-.destino-desc:hover{
     transform: translateY(-4px);
 }
 
