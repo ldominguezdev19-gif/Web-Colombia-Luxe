@@ -10,14 +10,22 @@ sliders.forEach(function(slider){
         track.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
 
-    nextBtn.addEventListener('click', function(){
+    nextBtn.addEventListener('click', function() {
         currentSlide = currentSlide + 1;
-        if (currentSlide >= totalSlides){
-            currentSlide = 0
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
         }
-    }
-)
-})
+        updateSlide();
+    });
+
+    prevBtn.addEventListener('click', function() {
+        currentSlide = currentSlide - 1;
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        }
+        updateSlide();
+    });
+});
     
 
 /*
