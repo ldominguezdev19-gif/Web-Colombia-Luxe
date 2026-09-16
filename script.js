@@ -1,5 +1,8 @@
 sliders.forEach(function(slider){
-    
+    const track = slider.querySelector('.division-sldier-track');
+    const prevBtn = slider.querySelector('.prev');
+    const nextBtn = slider.querySelector('.next');
+    const totalSlides = track.children.lenght;
 })
     
 
