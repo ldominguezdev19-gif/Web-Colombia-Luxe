@@ -3,6 +3,20 @@ sliders.forEach(function(slider){
     const prevBtn = slider.querySelector('.prev');
     const nextBtn = slider.querySelector('.next');
     const totalSlides = track.children.lenght;
+
+    let currentSlide = 0;
+
+    function updateSlide(){
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', function(){
+        currentSlide = currentSlide + 1;
+        if (currentSlide >= totalSlides){
+            currentSlide = 0
+        }
+    }
+)
 })
     
 
