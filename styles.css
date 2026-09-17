@@ -300,6 +300,18 @@ nav>div span {
     display: block;
 }
 
+.pos-right {
+    object-position: right;
+}
+
+.pos-bottom {
+    object-position: bottom;
+}
+
+.pos-center {
+    object-position: center;
+}
+
 .division-slider-arrow{
     position: absolute;
     top: 50%;
