@@ -4,6 +4,11 @@ sliders.forEach(function(slider){
     const prevBtn = slider.querySelector('.prev');
     const nextBtn = slider.querySelector('.next');
     const totalSlides = track.children.length;
+    track.style.width = (totalSlides *100) + "%";
+    const images = track.children;
+    for (let i = 0; i < images.length; i++){
+        images[i].style.flex = (100/totalSlides) + "%";
+    }
 
     let currentSlide = 0;
 
