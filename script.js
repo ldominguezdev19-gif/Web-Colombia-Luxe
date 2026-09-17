@@ -10,7 +10,9 @@ sliders.forEach(function(slider){
         track.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
 
-    nextBtn.addEventListener('click', function() {
+    nextBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
         currentSlide = currentSlide + 1;
         if (currentSlide >= totalSlides) {
             currentSlide = 0;
@@ -18,7 +20,9 @@ sliders.forEach(function(slider){
         updateSlide();
     });
 
-    prevBtn.addEventListener('click', function() {
+    prevBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
         currentSlide = currentSlide - 1;
         if (currentSlide < 0) {
             currentSlide = totalSlides - 1;
