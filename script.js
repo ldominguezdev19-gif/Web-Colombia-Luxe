@@ -8,7 +8,7 @@ sliders.forEach(function(slider){
     let currentSlide = 0;
 
     function updateSlide(){
-        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        track.style.transform = `translateX(-${currentSlide * (100/totalSlides)}%)`;
     }
 
     nextBtn.addEventListener('click', function(event) {
