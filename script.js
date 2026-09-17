@@ -7,7 +7,7 @@ sliders.forEach(function(slider){
     track.style.width = (totalSlides *100) + "%";
     const images = track.children;
     for (let i = 0; i < images.length; i++){
-        images[i].style.flex = (100/totalSlides) + "%";
+        images[i].style.flex = "0 0 " + (100/totalSlides) + "%";
     }
 
     let currentSlide = 0;
