@@ -1,3 +1,4 @@
+const sliders = document.querySelectorAll('.division-slider');
 sliders.forEach(function(slider){
     const track = slider.querySelector('.division-slider-track');
     const prevBtn = slider.querySelector('.prev');
