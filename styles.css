@@ -289,11 +289,11 @@ nav>div span {
 .division-slider-track{
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 400%;
 }
 
 .division-slider img{
-    flex: 0 0 100%;
+    flex: 0 0 25%;
     height: 100%;
     object-fit: cover;
     display: block;
