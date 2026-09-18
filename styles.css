@@ -1095,7 +1095,7 @@ a.channel-value:hover {
 /* =========================================
    RESPONSIVE STYLES
    ========================================= */
-
+/*
 @media (max-width: 1024px) {
     .contact-container {
         grid-template-columns: 1fr;
@@ -1140,4 +1140,5 @@ a.channel-value:hover {
         gap: 12px;
         text-align: center;
     }
-}
+}
+*/
