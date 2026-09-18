@@ -40,8 +40,8 @@ nav {
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.nav-scrolled{
-    background: rgba(11,11,10,0.9);
+.nav-scrolled {
+    background: rgba(11, 11, 10, 0.9);
     border-bottom: 1px solid rgba(201, 162, 75, 0.2)
 }
 
@@ -68,11 +68,11 @@ a {
     transition: all 0.25s ease;
 }
 
-.btn-gold-nav:hover{
+.btn-gold-nav:hover {
     box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
 }
 
-.hero-cta a{
+.hero-cta a {
     text-align: center;
     min-width: 220px;
     padding: 14px 28px;
@@ -81,10 +81,10 @@ a {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     border-radius: 4px;
-    
+
 }
 
-.btn-gold{
+.btn-gold {
     background: linear-gradient(135deg, #E8C77A, #C9A24B 50%, #A9812F);
     color: var(--black);
     transition: all 0.25s ease;
@@ -120,13 +120,13 @@ a {
     text-align: center;
 }
 
-.hero-overlay{
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(11,11,10,0.75) 0%, rgba(11,11,10,0.55) 40%, rgba(11,11,10,0.85) 100%);
+    background: linear-gradient(180deg, rgba(11, 11, 10, 0.75) 0%, rgba(11, 11, 10, 0.55) 40%, rgba(11, 11, 10, 0.85) 100%);
     z-index: 1;
 }
 
@@ -145,7 +145,7 @@ a {
     margin-bottom: 20px;
     border: 1px solid var(--gold);
     border-radius: 6px;
-    padding:8px 20px;
+    padding: 8px 20px;
     display: inline-block;
 }
 
@@ -290,13 +290,13 @@ nav>div span {
     margin-bottom: 24px;
 }
 
-.division-slider-track{
+.division-slider-track {
     display: flex;
     height: 100%;
     width: 400%;
 }
 
-.division-slider img{
+.division-slider img {
     flex: 0 0 25%;
     min-width: 0;
     height: 100%;
@@ -316,7 +316,7 @@ nav>div span {
     object-position: center;
 }
 
-.division-slider-arrow{
+.division-slider-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -333,11 +333,11 @@ nav>div span {
     z-index: 2;
 }
 
-.division-slider-arrow.prev{
+.division-slider-arrow.prev {
     left: 8px;
 }
 
-.division-slider-arrow.next{
+.division-slider-arrow.next {
     right: 8px;
 }
 
@@ -371,11 +371,19 @@ nav>div span {
 }
 
 .division-explore {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
     margin-top: auto;
     font-size: 12px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--cream);
+    display: inline-flex;
+    align-items: center;
 }
 
 .division-explore::after {
@@ -384,17 +392,17 @@ nav>div span {
     color: var(--gold);
 }
 
-.destinations-section{
+.destinations-section {
     padding: 96px 48px 0;
 }
 
-.destino-intro{
+.destino-intro {
     max-width: 600px;
     margin: 0 auto 96px;
     text-align: center;
 }
 
-.destino-intro-eyebrow{
+.destino-intro-eyebrow {
     color: var(--gold);
     font-size: 13px;
     letter-spacing: 3px;
@@ -403,24 +411,24 @@ nav>div span {
     display: block;
 }
 
-.destino-intro-title{
+.destino-intro-title {
     font-size: 38px;
     margin-bottom: 14px;
 }
 
-.destino-intro-subtitle{
+.destino-intro-subtitle {
     color: rgba(245, 241, 230, 0.7);
     font-size: 16px;
 }
 
-.destinos-grid{
+.destinos-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
     margin-top: 46px;
 }
 
-.destino-card{
+.destino-card {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
@@ -430,7 +438,7 @@ nav>div span {
     border: 1px solid #3a2f1a
 }
 
-.destino-card:hover{
+.destino-card:hover {
     box-shadow: 0 0 30px rgba(201, 162, 75, 0.35);
 }
 
@@ -441,7 +449,7 @@ nav>div span {
     height: 480px;
 }
 
-.destino-img{
+.destino-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -451,21 +459,21 @@ nav>div span {
     transition: transform 0.5s ease;
 }
 
-.destino-card:hover .destino-img{
+.destino-card:hover .destino-img {
     transform: scale(1.08);
 }
 
-.destino-overlay{
+.destino-overlay {
     position: absolute;
     z-index: 2;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 24px;
-    background: linear-gradient(to top, rgba(11,11,10,0.95) 0%, rgba(11,11,10,0.75) 35%, rgba(11,11,10,0.2) 70%, transparent);
+    background: linear-gradient(to top, rgba(11, 11, 10, 0.95) 0%, rgba(11, 11, 10, 0.75) 35%, rgba(11, 11, 10, 0.2) 70%, transparent);
 }
 
-.destino-overlay h3{
+.destino-overlay h3 {
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -474,7 +482,7 @@ nav>div span {
     text-transform: uppercase;
 }
 
-.destino-desc{
+.destino-desc {
     font-size: 14px;
     line-height: 1.5;
     color: rgba(245, 241, 230, 0.75);
@@ -482,32 +490,32 @@ nav>div span {
     max-width: 90%;
 }
 
-.destino-card:hover h3{
+.destino-card:hover h3 {
     color: var(--gold);
     transform: translateY(-4px);
 }
 
-.destino-card:hover .destino-desc{
+.destino-card:hover .destino-desc {
     color: rgba(201, 162, 75, 0.75);
     transform: translateY(-4px);
 }
 
-.destino-card::before{
+.destino-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(11,11,10,0.4);
+    background: rgba(11, 11, 10, 0.4);
     z-index: 1;
 }
 
-#nosotros{
+#nosotros {
     padding: 96px 48px 0;
 }
 
-.nosotros{
+.nosotros {
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
     gap: 72px;
@@ -516,7 +524,7 @@ nav>div span {
     margin: 0 auto;
 }
 
-.nosotros-photo{
+.nosotros-photo {
     position: relative;
     aspect-ratio: 4/5;
     border-radius: 4px;
@@ -525,7 +533,7 @@ nav>div span {
     overflow: hidden;
 }
 
-.nosotros-photo::after{
+.nosotros-photo::after {
     content: '';
     position: absolute;
     inset: 14px;
@@ -533,7 +541,7 @@ nav>div span {
     pointer-events: none;
 }
 
-.nosotros-eyebrow{
+.nosotros-eyebrow {
     font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -542,12 +550,12 @@ nav>div span {
     margin-bottom: 18px;
 }
 
-.nosotros-text h2{
+.nosotros-text h2 {
     font-size: 42px;
     margin-bottom: 6px;
 }
 
-.nosotros-role{
+.nosotros-role {
     font-size: 13px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -557,18 +565,18 @@ nav>div span {
     border-bottom: 1px solid rgba(245, 241, 230, 0.15);
 }
 
-.nosotros-text p.body{
+.nosotros-text p.body {
     font-size: 16px;
     line-height: 1.7;
     color: rgba(245, 241, 230, 0.65);
     max-width: 520px;
 }
 
-.nosotros-text p.body + p.body{
+.nosotros-text p.body+p.body {
     margin-top: 18px;
 }
 
-.nosotros-signature{
+.nosotros-signature {
     margin-top: 36px;
     font-family: 'Nunito', serif;
     font-style: italic;
@@ -576,7 +584,7 @@ nav>div span {
     color: var(--gold);
 }
 
-.nosotros-signature span{
+.nosotros-signature span {
     display: block;
     font-family: 'Nunito';
     font-style: normal;
@@ -719,8 +727,17 @@ nav>div span {
 }
 
 @keyframes statusPulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.25); opacity: 0.75; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.25);
+        opacity: 0.75;
+    }
 }
 
 .concierge-desc {
