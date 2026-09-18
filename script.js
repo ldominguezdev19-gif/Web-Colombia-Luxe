@@ -199,4 +199,115 @@ const divisionsData = {
     }
 };
 
+/* =========================================
+   MODAL DOM ELEMENTS & RENDER FUNCTION
+   ========================================= */
+
+// 1. Capturamos los elementos del modal
+const modal = document.getElementById('services-modal');
+const modalBackdrop = document.getElementById('modal-backdrop');
+const modalCloseBtn = document.getElementById('modal-close-btn');
+const modalTitle = document.getElementById('modal-title');
+const modalTagline = document.getElementById('modal-tagline');
+const modalServicesList = document.getElementById('modal-services-list');
+const modalWhatsappCta = document.getElementById('modal-whatsapp-cta');
+
+// 2. Función encargada de inyectar los datos en el modal
+function renderDivisionModal(divisionKey) {
+    // Buscamos los datos de la división seleccionada
+    const division = divisionsData[divisionKey];
+
+    // Programación defensiva: si por error no existe la clave, salimos
+    if (!division) {
+        console.error(`Division not found: ${divisionKey}`);
+        return;
+    }
+
+    // Actualizamos el título y el tagline
+    modalTitle.textContent = division.title;
+    modalTagline.textContent = division.tagline;
+
+    // Construimos las tarjetas de servicio mediante .map() y .join('')
+    const servicesHTML = division.services.map(function (service) {
+        return `
+            <div class="service-card-item">
+                <div class="service-card-icon">
+                    ${service.icon}
+                </div>
+                <div class="service-card-info">
+                    <h4>${service.name}</h4>
+                    <p>${service.description}</p>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Inyectamos todo el HTML generado en una sola operación
+    modalServicesList.innerHTML = servicesHTML;
+
+    // Personalizamos el mensaje de WhatsApp según la división consultada
+    const waPhone = '573001234567';
+    const customMessage = `Hello Colombia Luxe Concierge, I am interested in bespoke services for: *${division.title}*. Could you share more details?`;
+    modalWhatsappCta.href = `https://wa.me/${waPhone}?text=${encodeURIComponent(customMessage)}`;
+}
+
+/* =========================================
+   MODAL CONTROLLER (OPEN / CLOSE LOGIC)
+   ========================================= */
+
+// 1. Función para abrir el modal
+function openServicesModal(divisionKey) {
+    // Primero inyectamos el contenido correspondiente
+    renderDivisionModal(divisionKey);
+
+    // Mostramos el modal agregando la clase que tiene opacity: 1 y visibility: visible
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+
+    // Bloqueamos el scroll del body mientras el modal esté activo
+    document.body.style.overflow = 'hidden';
+}
+
+// 2. Función para cerrar el modal
+function closeServicesModal() {
+    // Ocultamos el modal retirando la clase
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+
+    // Restauramos el scroll normal de la página
+    document.body.style.overflow = '';
+}
+
+// 3. Conectamos los botones "Explore" con data-division
+const exploreButtons = document.querySelectorAll('.division-explore');
+
+exploreButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+        // Evitamos que el clic active el enlace de la tarjeta o recargue la página
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Leemos el valor de data-division (ej. "stay", "culinary", "wellbeing")
+        const selectedDivision = button.dataset.division;
+
+        // Abrimos el modal con esa división
+        openServicesModal(selectedDivision);
+    });
+});
+
+// 4. Cerrar con la X
+modalCloseBtn.addEventListener('click', closeServicesModal);
+
+// 5. Cerrar al hacer clic en el fondo oscuro exterior
+modalBackdrop.addEventListener('click', closeServicesModal);
+
+// 6. Cerrar con la tecla 'Escape' (Accesibilidad y UX de escritorio)
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeServicesModal();
+    }
+});
+
+
+
 
