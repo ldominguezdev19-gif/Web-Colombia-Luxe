@@ -278,22 +278,24 @@ function closeServicesModal() {
     document.body.style.overflow = '';
 }
 
-// 3. Conectamos los botones "Explore" con data-division
-const exploreButtons = document.querySelectorAll('.division-explore');
+// 3. Conectamos toda la tarjeta de la división (excepto cuando se hace clic en el slider)
+const divisionCards = document.querySelectorAll('.division-card');
 
-exploreButtons.forEach(function (button) {
-    button.addEventListener('click', function (event) {
-        // Evitamos que el clic active el enlace de la tarjeta o recargue la página
-        event.preventDefault();
-        event.stopPropagation();
+divisionCards.forEach(function (card) {
+    card.addEventListener('click', function (event) {
+        // Si el clic fue dentro del slider de fotos o en sus flechas, no abrimos el modal
+        if (event.target.closest('.division-slider')) {
+            return;
+        }
 
-        // Leemos el valor de data-division (ej. "stay", "culinary", "wellbeing")
-        const selectedDivision = button.dataset.division;
+        // Leemos la división asignada a esta tarjeta
+        const selectedDivision = card.dataset.division;
 
         // Abrimos el modal con esa división
         openServicesModal(selectedDivision);
     });
 });
+
 
 // 4. Cerrar con la X
 modalCloseBtn.addEventListener('click', closeServicesModal);
