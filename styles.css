@@ -628,6 +628,17 @@ nav>div span {
    CONTACT SECTION
    ========================================= */
 
+hr{
+    border: none;
+    height: 1px;
+    background: rgba(201, 162, 75, 0.2);
+    margin: 64px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .contact-section {
     padding: 120px 48px 60px;
     max-width: 1280px;
