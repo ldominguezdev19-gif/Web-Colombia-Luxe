@@ -50,6 +50,10 @@ nav {
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
+.nav-section{
+    text-transform: uppercase;
+}
+
 .nav-section:hover{
     color: var(--gold);
 }
