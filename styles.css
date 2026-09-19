@@ -104,6 +104,17 @@ a {
     animation: whatsapp-pulse 2s infinite;
 }
 
+.btn-whatsapp-float img{
+    width: 32px;
+    height: 32px;
+}
+
+.btn-whatsapp-float:hover{
+    transform: scale(1.1);
+}
+
+
+
 .btn-gold-nav:hover {
     box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
 }
