@@ -30,11 +30,20 @@ h3 {
 .brand-name{
     border-left: 1px solid #c9a15a;
     padding-left: 10px;
-    font-size: 35px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: max-content;
     flex-shrink: 0;
+}
+
+.brand-name span{
+    display: inline !important;
+}
+
+.brand-name services{
+    display: block !important;
 }
 
 .brand-line1{
@@ -337,9 +346,10 @@ nav>div span {
 }
 
 .servicios-intro-title {
-    font-size: 56px;
+    font-size: 46px;
     line-height: 1.1;
     margin-bottom: 24px;
+    text-transform: uppercase;
 }
 
 .servicios-intro-subtitle {
@@ -511,6 +521,7 @@ nav>div span {
 .destino-intro-title {
     font-size: 38px;
     margin-bottom: 14px;
+    text-transform: uppercase;
 }
 
 .destino-intro-subtitle {
@@ -735,6 +746,7 @@ hr{
     line-height: 1.2;
     margin-bottom: 18px;
     color: var(--cream);
+    text-transform: uppercase;
 }
 
 .contact-subtitle {
