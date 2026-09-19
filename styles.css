@@ -52,10 +52,29 @@ nav {
 
 .nav-section{
     text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+
+.nav-section::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #D4AF37;
+    transition: width 0.3s ease;
+}
+
+.nav-section:hover::after{
+    width: 100%;
 }
 
 .nav-section:hover{
-    color: var(--gold);
+    color: #D4AF37;
 }
 
 .nav-brand{
