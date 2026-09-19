@@ -92,7 +92,7 @@ a {
     width: 60px;
     height: 60px;
     z-index: 1000;
-    background-color: #D4AF37;
+    background: linear-gradient(135deg, #E8C77A, #C9A24B 50%, #A9812F);
     color: var(--black);
     padding: 14px 28px;
     border-radius: 50%;
