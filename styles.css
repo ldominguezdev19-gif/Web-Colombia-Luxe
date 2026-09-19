@@ -33,7 +33,12 @@ h3 {
     font-size: 35px;
 }
 
-.brand-name span{
+.luxe{
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.services{
     font-style: italic;
 }
 
