@@ -113,7 +113,17 @@ a {
     transform: scale(1.1);
 }
 
-
+@keyframes whatsapp-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
 
 .btn-gold-nav:hover {
     box-shadow: 0 0 20px rgba(201, 162, 75, 0.5);
