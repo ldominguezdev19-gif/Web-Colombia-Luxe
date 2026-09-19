@@ -31,6 +31,14 @@ h3 {
     border-left: 1px solid #c9a15a;
     padding-left: 10px;
     font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    flex-shrink: 0;
+}
+
+.brand-line1{
+    white-space: nowrap;
 }
 
 .luxe{
