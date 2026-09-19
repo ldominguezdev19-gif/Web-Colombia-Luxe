@@ -34,8 +34,9 @@ h3 {
 }
 
 .luxe{
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 1px;
+    color: var(--cream);
 }
 
 .services{
@@ -60,8 +61,6 @@ nav {
     position: relative;
     transition: color 0.3s ease;
 }
-
-
 
 .nav-section::after {
     content: '';
