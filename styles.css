@@ -36,6 +36,8 @@ h3 {
     justify-content: center;
     width: max-content;
     flex-shrink: 0;
+    text-transform: uppercase;
+    font-family: Nunito;
 }
 
 .brand-name span{
@@ -48,6 +50,7 @@ h3 {
 
 .brand-line1{
     white-space: nowrap;
+    font-weight: bold;
 }
 
 .luxe{
