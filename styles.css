@@ -89,17 +89,19 @@ a {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    z-index: 100;
-    background: linear-gradient(135deg, #E8C77A, #C9A24B 50%, #A9812F);
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    background-color: #25D366;
     color: var(--black);
     padding: 14px 28px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 13px;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    transition: all 0.25s ease;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    animation: whatsapp-pulse 2s infinite;
 }
 
 .btn-gold-nav:hover {
