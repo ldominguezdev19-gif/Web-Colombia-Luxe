@@ -85,13 +85,18 @@ a {
     text-decoration: none;
 }
 
-.btn-gold-nav {
+.btn-whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 100;
     background: linear-gradient(135deg, #E8C77A, #C9A24B 50%, #A9812F);
-    color: var(--cream);
+    color: var(--black);
     padding: 14px 28px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 13px;
+    text-decoration: none;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition: all 0.25s ease;
