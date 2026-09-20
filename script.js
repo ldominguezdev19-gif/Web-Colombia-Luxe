@@ -67,7 +67,7 @@ if (contactForm) {
         }
 
         // WhatsApp number for concierge
-        const conciergeNumber = '573001234567';
+        const conciergeNumber = '573216976176';
 
         // Format luxury WhatsApp message
         const waText = `✨ *COLOMBIA LUXE — PRIVATE INQUIRY* ✨\n\n` +
@@ -95,8 +95,8 @@ if (contactForm) {
         // Launch WhatsApp handoff
         const waUrl = `https://wa.me/${conciergeNumber}?text=${encodeURIComponent(waText)}`;
 
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
         setTimeout(() => {
-            window.open(waUrl, '_blank', 'noopener,noreferrer');
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalBtnHTML;
             contactForm.reset();
