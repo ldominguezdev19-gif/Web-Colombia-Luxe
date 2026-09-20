@@ -246,7 +246,7 @@ function renderDivisionModal(divisionKey) {
     modalServicesList.innerHTML = servicesHTML;
 
     // Personalizamos el mensaje de WhatsApp según la división consultada
-    const waPhone = '573001234567';
+    const waPhone = '573216976176';
     const customMessage = `Hello Colombia Luxe Concierge, I am interested in bespoke services for: *${division.title}*. Could you share more details?`;
     modalWhatsappCta.href = `https://wa.me/${waPhone}?text=${encodeURIComponent(customMessage)}`;
 }
