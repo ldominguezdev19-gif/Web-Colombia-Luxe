@@ -38,7 +38,7 @@ sliders.forEach(function (slider) {
 });
 
 /* =========================================
-   CONTACT FORM & CONCIERGE INTEGRATION
+    CONTACT FORM & CONCIERGE INTEGRATION
    ========================================= */
 
 const contactForm = document.getElementById('contact-form');
@@ -105,7 +105,7 @@ if (contactForm) {
 }
 
 /* =========================================
-   DIVISIONS & SERVICES DATA
+    DIVISIONS & SERVICES DATA
    ========================================= */
 
 const divisionsData = {
@@ -200,7 +200,7 @@ const divisionsData = {
 };
 
 /* =========================================
-   MODAL DOM ELEMENTS & RENDER FUNCTION
+    MODAL DOM ELEMENTS & RENDER FUNCTION
    ========================================= */
 
 // 1. Capturamos los elementos del modal
@@ -252,7 +252,7 @@ function renderDivisionModal(divisionKey) {
 }
 
 /* =========================================
-   MODAL CONTROLLER (OPEN / CLOSE LOGIC)
+    MODAL CONTROLLER (OPEN / CLOSE LOGIC)
    ========================================= */
 
 // 1. Función para abrir el modal
