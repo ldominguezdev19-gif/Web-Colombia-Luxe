@@ -71,13 +71,13 @@ if (contactForm) {
 
         // Format luxury WhatsApp message
         const waText = `✨ *COLOMBIA LUXE — PRIVATE INQUIRY* ✨\n\n` +
-            `👤 *Client:* ${name}\n` +
-            `✉️ *Email:* ${email}\n` +
-            `📱 *Phone / WA:* ${phone}\n` +
-            `📍 *Destination:* ${destination}\n` +
-            `🛎️ *Service:* ${service}\n` +
-            `🗓️ *Dates:* ${dates}\n` +
-            `📝 *Special Requests:* ${message}\n\n` +
+            `*Client:* ${name}\n` +
+            `*Email:* ${email}\n` +
+            `*Phone / WA:* ${phone}\n` +
+            `*Destination:* ${destination}\n` +
+            `*Service:* ${service}\n` +
+            `*Dates:* ${dates}\n` +
+            `*Special Requests:* ${message}\n\n` +
             `_Sent via Colombia Luxe VIP Portal_`;
 
         // Update button state
