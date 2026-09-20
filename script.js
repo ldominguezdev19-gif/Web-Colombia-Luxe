@@ -70,7 +70,7 @@ if (contactForm) {
         const conciergeNumber = '573216976176';
 
         // Format luxury WhatsApp message
-        const waText = `✨ *COLOMBIA LUXE — PRIVATE INQUIRY* ✨\n\n` +
+        const waText = `*COLOMBIA LUXE — PRIVATE INQUIRY* \n\n` +
             `*Client:* ${name}\n` +
             `*Email:* ${email}\n` +
             `*Phone / WA:* ${phone}\n` +
