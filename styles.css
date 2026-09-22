@@ -1502,7 +1502,7 @@ a.channel-value:hover {
         position: fixed;
         left: 100%;
         flex-direction: column;
-        top: 169px;
+        top: 99px;
         width: 100%;
         background-color: #141310;
         transition: left 0.3s;
