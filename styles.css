@@ -1472,7 +1472,23 @@ a.channel-value:hover {
         padding: 0 20px;
         max-width: 100%;
     }
+
+    .hero h1{
+        font-size: 38px;
+        line-height: 1.15;
+    }
     
+    .hero-cta{
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .hero-cta a{
+        width: 100%;
+        max-width: 280px;
+    }
+
     .contact-section {
         padding: 80px 24px 40px;
     }
