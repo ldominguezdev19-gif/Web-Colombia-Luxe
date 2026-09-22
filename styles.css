@@ -1506,6 +1506,7 @@ a.channel-value:hover {
         width: 100%;
         background-color: #141310;
         transition: left 0.3s;
+        bottom: 0;
     }
 
     nav ul.nav-open{
