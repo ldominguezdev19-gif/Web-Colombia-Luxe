@@ -1502,14 +1502,20 @@ a.channel-value:hover {
         position: fixed;
         left: 100%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
         top: 99px;
         width: 100%;
+        height: calc(100vh - 70px);
         background-color: #141310;
         transition: left 0.3s;
         bottom: 0;
+        z-index: 50;
     }
 
-    .nav-menu.nav-open{
+    .nav-menu.nav-open,
+    .nav-menu.nav-menu_visible{
         left: 0;
     }
 
