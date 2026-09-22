@@ -1490,8 +1490,21 @@ a.channel-value:hover {
         grid-column: span 1;
     }
 
+    nav{
+        padding: 16px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .logo{
-        height: 50px;
+        height: 38px !important;
+        width: auto;
+    }
+
+    .brand-name{
+        font-size: 18px !important;
+        height: auto !important;
     }
 
     .brand-name{
@@ -1521,7 +1534,11 @@ a.channel-value:hover {
 
 
     .nav-toggle{
-        display: flex;
+        display: flex !important;
+    }
+
+    nav ul:not(.nav-menu){
+        display: none;
     }
 
     .nosotros{
