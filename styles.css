@@ -1468,6 +1468,11 @@ a.channel-value:hover {
 }
 
 @media (max-width: 768px) {
+    .hero-content{
+        padding: 0 20px;
+        max-width: 100%;
+    }
+    
     .contact-section {
         padding: 80px 24px 40px;
     }
