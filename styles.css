@@ -1490,6 +1490,16 @@ a.channel-value:hover {
         grid-column: span 1;
     }
 
+    nav ul{
+        position: fixed;
+        left: 100%;
+        flex-direction: column;
+        top: 169px;
+        width: 100%;
+        background-color: #141310;
+        transition: left 0.3s;
+    }
+
     .nosotros{
         grid-template-columns: 1fr;
     }
