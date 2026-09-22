@@ -316,7 +316,7 @@ document.addEventListener('keydown', function (event) {
     NAV TOOGLE
    ========================================= */
 const navToggle = document.querySelector(".nav-toggle")
-const navMenu = document.querySelector("nav ul")
+const navMenu = document.querySelector(".nav-menu")
 
 navToggle.addEventListener("click", ()=>{
     navMenu.classList.toggle("nav-open")
