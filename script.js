@@ -318,6 +318,17 @@ document.addEventListener('keydown', function (event) {
 const navToggle = document.querySelector(".nav-toggle")
 const navMenu = document.querySelector(".nav-menu")
 
+
+// 1. Abrir o cerrar el menú al hacer clic en el botón hamburguesa
 navToggle.addEventListener("click", ()=>{
     navMenu.classList.toggle("nav-open")
+})
+
+// 2. Cerrar automáticamente el menú al hacer clic en cualquier enlace de la navegación
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () =>{
+        navMenu.classList.remove("nav-open")
+    })
 })
