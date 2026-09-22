@@ -1453,7 +1453,7 @@ a.channel-value:hover {
     }
 
     .divisiones{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .contact-title {
