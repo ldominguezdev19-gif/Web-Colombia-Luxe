@@ -1498,7 +1498,7 @@ a.channel-value:hover {
         height: 10px;
     }
 
-    nav ul{
+    .nav-menu{
         position: fixed;
         left: 100%;
         flex-direction: column;
@@ -1509,7 +1509,7 @@ a.channel-value:hover {
         bottom: 0;
     }
 
-    nav ul.nav-open{
+    .nav-menu.nav-open{
         left: 0;
     }
 
