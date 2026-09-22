@@ -1456,6 +1456,10 @@ a.channel-value:hover {
         grid-template-columns: 1fr;
     }
 
+    .destinos-grid{
+    grid-template-columns: 1fr;
+}
+
     .contact-title {
         font-size: 32px;
     }
