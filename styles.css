@@ -1508,6 +1508,15 @@ a.channel-value:hover {
         transition: left 0.3s;
     }
 
+    nav ul.nav-open{
+        left: 0;
+    }
+
+
+    .nav-toggle{
+        display: flex;
+    }
+
     .nosotros{
         grid-template-columns: 1fr;
     }
