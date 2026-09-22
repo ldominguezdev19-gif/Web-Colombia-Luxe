@@ -1458,7 +1458,11 @@ a.channel-value:hover {
 
     .destinos-grid{
     grid-template-columns: 1fr;
-}
+    }
+
+    .destino-card{
+        grid-column: span 1;
+    }
 
     .contact-title {
         font-size: 32px;
