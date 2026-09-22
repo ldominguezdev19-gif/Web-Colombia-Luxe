@@ -1122,7 +1122,7 @@ a.channel-value:hover {
 }
 
 /* =========================================
-   SITE FOOTER
+    SITE FOOTER
    ========================================= */
 
 .site-footer {
@@ -1233,7 +1233,7 @@ a.channel-value:hover {
 }
 
 /* =========================================
-   SERVICES MODAL STYLES
+    SERVICES MODAL STYLES
    ========================================= */
 
 .services-modal {
@@ -1432,9 +1432,9 @@ a.channel-value:hover {
 
 
 /* =========================================
-   RESPONSIVE STYLES
+    RESPONSIVE STYLES
    ========================================= */
-/*
+
 @media (max-width: 1024px) {
     .contact-container {
         grid-template-columns: 1fr;
@@ -1480,4 +1480,3 @@ a.channel-value:hover {
         text-align: center;
     }
 }
-*/
