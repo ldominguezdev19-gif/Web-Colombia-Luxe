@@ -1460,9 +1460,15 @@ a.channel-value:hover {
     grid-template-columns: 1fr;
     }
 
-    .destino-card{
+    .destino-card:nth-child(3),
+    .destino-card:nth-child(4),
+    .destino-card:nth-child(5) {
         grid-column: span 1;
     }
+
+.nosotros{
+    grid-template-columns: 0.85fr 1.15fr;
+}
 
     .contact-title {
         font-size: 32px;
