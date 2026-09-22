@@ -1452,6 +1452,10 @@ a.channel-value:hover {
         padding: 80px 24px 40px;
     }
 
+    .divisiones{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .contact-title {
         font-size: 32px;
     }
@@ -1479,4 +1483,6 @@ a.channel-value:hover {
         gap: 12px;
         text-align: center;
     }
+
+    
 }
