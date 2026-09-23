@@ -406,6 +406,14 @@ nav>div span {
     width: 400%;
 }
 
+.division-slider-track.five-items{
+    width: 500%;
+}
+
+.division-slider-track.five-items img{
+    flex: 0 0 20%;
+}
+
 .division-slider img {
     flex: 0 0 25%;
     min-width: 0;
