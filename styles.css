@@ -1513,7 +1513,7 @@ a.channel-value:hover {
    ========================================= */
 
 @media (max-width: 1150px) {
-    .nav-container{
+    .nav-brand{
         padding: 16px 20px;
     }
 
