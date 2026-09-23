@@ -30,7 +30,7 @@ h3 {
 .brand-name{
     border-left: 1px solid #c9a15a;
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1497,7 +1497,7 @@ a.channel-value:hover {
     RESPONSIVE STYLES
    ========================================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
     .contact-container {
         grid-template-columns: 1fr;
         gap: 40px;
