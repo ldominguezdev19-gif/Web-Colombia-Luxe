@@ -642,6 +642,7 @@ nav>div span {
     background: linear-gradient(150deg, #3a2f1a, #171310);
     border: 1px solid rgba(201, 162, 75, 0.5);
     overflow: hidden;
+    box-shadow: 0 0 30px rgba(201, 162, 75, 0.35);
 }
 
 .nosotros-photo img{
@@ -650,6 +651,7 @@ nav>div span {
     object-fit: cover;
     object-position: center;
     display: block;
+    
 }
 
 .nosotros-photo::after {
