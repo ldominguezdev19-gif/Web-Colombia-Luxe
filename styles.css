@@ -430,17 +430,27 @@ nav>div span {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 28px;
+    width: 36px;
     height: 28px;
     border-radius: 50%;
     background: rgba(11, 11, 10, 0.55);
-    border: 1px solid rgba(245, 241, 230, 0.5);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(201, 162, 75, 0.5);
     color: var(--cream);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
+    transition: all0.3s ease;
+}
+
+.division-slider-arrow;hover{
+    background: rgba(201, 162, 75, 0.2);
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 0 12px rgba(201, 162, 75, 0.3);
 }
 
 .division-slider-arrow.prev {
