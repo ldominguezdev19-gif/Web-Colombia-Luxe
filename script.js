@@ -1,38 +1,39 @@
 const sliders = document.querySelectorAll('.division-slider');
+
 sliders.forEach(function (slider) {
     const track = slider.querySelector('.division-slider-track');
     const prevBtn = slider.querySelector('.prev');
     const nextBtn = slider.querySelector('.next');
-    const totalSlides = track.children.length;
-    track.style.width = (totalSlides * 100) + "%";
     const images = track.children;
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.flex = "0 0 " + (100 / totalSlides) + "%";
+    const totalSlides = images.length;
+
+    // 1. Asignamos los anchos de forma dinámica y limpia
+    track.style.width = `${totalSlides * 100}%`;
+    
+    const slideWidth = 100 / totalSlides;
+    for (let i = 0; i < totalSlides; i++) {
+        images[i].style.flex = `0 0 ${slideWidth}%`;
     }
 
     let currentSlide = 0;
 
     function updateSlide() {
-        track.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+        // 2. Desplazamiento exacto por cada tarjeta individual
+        const moveAmount = currentSlide * slideWidth;
+        track.style.transform = `translateX(-${moveAmount}%)`;
     }
 
     nextBtn.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
-        currentSlide = currentSlide + 1;
-        if (currentSlide >= totalSlides) {
-            currentSlide = 0;
-        }
+        currentSlide = (currentSlide + 1) % totalSlides; // Salto circular perfecto
         updateSlide();
     });
 
     prevBtn.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
-        currentSlide = currentSlide - 1;
-        if (currentSlide < 0) {
-            currentSlide = totalSlides - 1;
-        }
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Retroceso circular perfecto
         updateSlide();
     });
 });
@@ -325,7 +326,7 @@ navToggle.addEventListener("click", ()=>{
 })
 
 // 2. Cerrar automáticamente el menú al hacer clic en cualquier enlace de la navegación
-const navLinks = document.querySelectorAll(".nav-menu a");
+const navLinks = document.querySelector(".nav-menu a");
 
 navLinks.forEach(link => {
     link.addEventListener("click", () =>{
