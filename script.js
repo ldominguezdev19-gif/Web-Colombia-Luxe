@@ -326,7 +326,7 @@ navToggle.addEventListener("click", ()=>{
 })
 
 // 2. Cerrar automáticamente el menú al hacer clic en cualquier enlace de la navegación
-const navLinks = document.querySelector(".nav-menu a");
+const navLinks = document.querySelectorAll(".nav-menu a");
 
 navLinks.forEach(link => {
     link.addEventListener("click", () =>{
