@@ -445,7 +445,7 @@ nav>div span {
     transition: all0.3s ease;
 }
 
-.division-slider-arrow;hover{
+.division-slider-arrow:hover{
     background: rgba(201, 162, 75, 0.2);
     border-color: var(--gold);
     color: var(--gold);
@@ -453,12 +453,13 @@ nav>div span {
     box-shadow: 0 0 12px rgba(201, 162, 75, 0.3);
 }
 
+
 .division-slider-arrow.prev {
-    left: 8px;
+    left: 12px;
 }
 
 .division-slider-arrow.next {
-    right: 8px;
+    right: 12px;
 }
 
 .division-card h3 {
