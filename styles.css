@@ -403,7 +403,8 @@ nav>div span {
 .division-slider-track {
     display: flex;
     height: 100%;
-    width: 400%;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
 }
 
 .division-slider-track.five-items{
