@@ -644,6 +644,14 @@ nav>div span {
     overflow: hidden;
 }
 
+.nosotros-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
 .nosotros-photo::after {
     content: '';
     position: absolute;
