@@ -333,3 +333,16 @@ navLinks.forEach(link => {
         navMenu.classList.remove("nav-open")
     })
 })
+
+// 3. Volver al inicio (arriba del todo) al hacer clic en el logo o el nombre de la marca
+const navBrand = document.querySelector(".nav-brand");
+
+if (navBrand) {
+    navBrand.style.cursor = "pointer"; // Cambia el cursor a manito para indicar que es interactivo
+    navBrand.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Desplazamiento suave hacia la parte superior
+        });
+    });
+}
