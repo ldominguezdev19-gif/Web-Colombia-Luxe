@@ -37,20 +37,35 @@ h3 {
     width: max-content;
     flex-shrink: 0;
     text-transform: uppercase;
-    font-family: Nunito;
+    font-family: 'Nunito';
+    line-height: 1.1;
 }
 
 .brand-name span{
     display: inline !important;
 }
 
-.brand-name services{
+.brand-name .services{
     display: block !important;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--gold);
+}
+
+.brand-name .services {
+    display: block !important;
+    font-style: italic;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--gold);
 }
 
 .brand-line1{
     white-space: nowrap;
     font-weight: bold;
+    display: block;
+    color: var(--cream);
 }
 
 .luxe{
@@ -1498,6 +1513,10 @@ a.channel-value:hover {
    ========================================= */
 
 @media (max-width: 1150px) {
+    .nav-container{
+        padding: 16px 20px;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1506,6 +1525,15 @@ a.channel-value:hover {
     .footer-inner {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+
+    logo {
+        height: 38px !important;
+    }
+
+    .brand-name {
+        font-size: 18px !important;
+        height: auto !important;
     }
 }
 
@@ -1569,7 +1597,7 @@ a.channel-value:hover {
     }
 
     .logo{
-        height: 38px !important;
+        height: 60px !important;
         width: auto;
     }
 
