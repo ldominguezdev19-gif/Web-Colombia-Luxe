@@ -218,6 +218,7 @@ a {
 
 .hero {
     position: relative;
+    width: 100%;
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -244,6 +245,25 @@ a {
     z-index: 2;
     max-width: 800px;
     padding: 0 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divisiones, 
+.destinations-section,
+.nosotros.section,
+.contact-section{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.division-card{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .hero-badge {
