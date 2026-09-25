@@ -774,7 +774,7 @@ hr{
     height: 1px;
     background: rgba(201, 162, 75, 0.2);
     margin: 32px 0;
-    width: 100vw;
+    width: 100%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
