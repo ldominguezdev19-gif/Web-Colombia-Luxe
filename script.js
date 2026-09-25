@@ -347,6 +347,8 @@ if (navBrand) {
     });
 }
 
+// Las cards de destino todavia no van a ningun lado
+// esto evita que el link salte al inicio de la pagina al hacer clic
 document.querySelectorAll('.destino-card').forEach(card => {
     card.addEventListener('click', (e) => {
         e.preventDefault();
