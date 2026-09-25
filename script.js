@@ -346,3 +346,9 @@ if (navBrand) {
         });
     });
 }
+
+document.querySelectorAll('.destino-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
+});
