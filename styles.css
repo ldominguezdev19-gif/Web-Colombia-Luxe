@@ -240,7 +240,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(assets/imagenes/copas-169.jpg);
+    background-image: url(assets/imagenes/copas-169.webp);
     background-size: cover;
     background-position: center 60%;
     overflow: hidden;
